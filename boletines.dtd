@@ -1,0 +1,18 @@
+<!ELEMENT boletines (boletin+)>
+<!ELEMENT boletin (fecha_emision, hora_emision, fecha_situacion_inicial, fecha_situacion_final, elaboro,apoyo,fuentes,datos+)>
+<!ELEMENT fecha_emision (#PCDATA)>
+<!ELEMENT hora_emision (#PCDATA)>
+<!ELEMENT fecha_situacion_inicial (#PCDATA)>
+<!ELEMENT fecha_situacion_final (#PCDATA)>
+<!ELEMENT elaboro (#PCDATA)>
+<!ELEMENT apoyo (#PCDATA)>
+<!ELEMENT fuentes (#PCDATA)>
+<!ATTLIST boletin numero ID #REQUIRED>
+<!ELEMENT datos (detalle+)>
+<!ELEMENT detalle (infectados,activos,recuperados,fallecidos)>
+<!ATTLIST detalle descripcion CDATA #IMPLIED>
+<!ATTLIST detalle nivel (pais|departamento|municipio) "municipio">
+<!ELEMENT infectados (#PCDATA)>
+<!ELEMENT activos (#PCDATA)>
+<!ELEMENT recuperados (#PCDATA)>
+<!ELEMENT fallecidos (#PCDATA)>
