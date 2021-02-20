@@ -12,8 +12,9 @@ library(xml2)
 library(htmltools)
 library(pipeR)
 
+
 #leo el documento xml
-xmldocument <- read_xml(x="boletines.xml")
+xmldocument <- read_xml(x="boletines.xml", options = "DTDVALID")
 
 name<-xml_name(xmldocument)
 boletinesDoc <- xml_children(xmldocument)
@@ -37,20 +38,20 @@ for(i in 1:numero_boletines)
 {
   boletinNumero = xml_attrs(xml_child(xmldocument, i))[["numero"]]
   
-  boletinHTML <-  paste(boletinHTML,"<h3>BoletÃ­n Diario COVID 19 - CALI</h3>", sep="")
+  boletinHTML <-  paste(boletinHTML,"<h3>Boletín Diario COVID 19 - CALI</h3>", sep="")
   boletinHTML <-  paste(boletinHTML,"<p>Boletin No. <b>", boletinNumero ,"</b>", sep="")
   boletinHTML <-  paste(boletinHTML, tabSpace,fechaEmision[i],horaEmision[i],"<br>",  sep="")
-  boletinHTML <-  paste(boletinHTML,"ElaborÃ³:", elaboro[i],"<br>", sep="")
-  boletinHTML <-  paste(boletinHTML,"ApoyÃ³:", apoyo[i],"<br>", sep="")
+  boletinHTML <-  paste(boletinHTML,"Elaboró:", elaboro[i],"<br>", sep="")
+  boletinHTML <-  paste(boletinHTML,"Apoyó:", apoyo[i],"<br>", sep="")
   boletinHTML <-  paste(boletinHTML,"Fuentes:", fuentes[i],"<br><br><p>", sep="")
-  boletinHTML <-  paste(boletinHTML,"SegÃºn el instituto nacional de salud, esta es la situaciÃ³n a la fecha:<br><br>","<center><b>SituaciÃ³n EpidemiolÃ³gica del COVID-19</b><br>" , fechaSituacionInicial[i]," a ", fechaSituacionFinal[i],"</center>", sep="")
+  boletinHTML <-  paste(boletinHTML,"Según el instituto nacional de salud, esta es la situación a la fecha:<br><br>","<center><b>Situación Epidemiolígica del COVID-19</b><br>" , fechaSituacionInicial[i]," a ", fechaSituacionFinal[i],"</center>", sep="")
   
   datosChild <- xml_children(xml_find_all(xml_child(xmldocument, i), ".//datos"))
   numero_datos_detalle <- (length(datosChild))
   
   tablaGeneral <- "<table style='width:100%'>
   <tr>
-    <th>DescripciÃ³n</th>
+    <th>Descripción</th>
     <th class='naranja' >Infectados</th>
     <th class='naranja' >Activos</th>
     <th class='verde' >Recuperados</th>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE boletines SYSTEM "boletines.dtd">
 <boletines>
 
@@ -7,9 +7,9 @@
               <hora_emision>12:50 am </hora_emision>
               <fecha_situacion_inicial>15 de marzo de 2020 </fecha_situacion_inicial>
               <fecha_situacion_final>18 de junio de 2020 </fecha_situacion_final>
-              <elaboro>Grupo vigilancia epidemiologica cali </elaboro>
-              <apoyo>Universidad del Valle</apoyo>
-              <fuentes>Salud publica SSPM-Cali - Vigilancia Epidemiologica - INS</fuentes>
+              <elaboro>&elaboro_gvec;</elaboro>
+              <apoyo>&univalle;</apoyo>
+              <fuentes>&sspm_ins;</fuentes>
               <datos>
               
                     <detalle descripcion="Colombia" nivel="pais">
@@ -35,15 +35,49 @@
                     
               </datos>
       </boletin>
+	  
+	  <boletin numero="b102">
+              <fecha_emision>20 de junio de 2020 </fecha_emision>
+              <hora_emision>1:17 am </hora_emision>
+              <fecha_situacion_inicial>15 de marzo de 2020 </fecha_situacion_inicial>
+              <fecha_situacion_final>19 de junio de 2020 </fecha_situacion_final>
+              <elaboro>&elaboro_gvec;</elaboro>
+              <apoyo>&univalle;</apoyo>
+              <fuentes>&sspm_ins;</fuentes>
+              <datos>
+              
+                    <detalle descripcion="Colombia" nivel="pais">
+                            <infectados>63276</infectados>
+                            <activos>37243</activos>
+                            <recuperados>23988</recuperados>
+                            <fallecidos>2045</fallecidos>
+                    </detalle>
+                    
+                     <detalle descripcion="Valle del Cauca" nivel="departamento">
+                            <infectados>5874</infectados>
+                            <activos>3300</activos>
+                            <recuperados>2342</recuperados>
+                            <fallecidos>232</fallecidos>
+                    </detalle>
+                    
+                    <detalle descripcion="Cali" nivel="municipio">
+                            <infectados>5159</infectados>
+                            <activos>2929</activos>
+                            <recuperados>2041</recuperados>
+                            <fallecidos>189</fallecidos>
+                    </detalle>
+                    
+              </datos>
+      </boletin>
       
       <boletin numero="b105">
               <fecha_emision>22 de junio de 2020 </fecha_emision>
               <hora_emision>10:55 pm </hora_emision>
               <fecha_situacion_inicial>15 de marzo de 2020 </fecha_situacion_inicial>
               <fecha_situacion_final>22 de junio de 2020 </fecha_situacion_final>
-              <elaboro>Grupo vigilancia epidemiologica cali </elaboro>
-              <apoyo>Universidad del Valle</apoyo>
-              <fuentes>Salud publica SSPM-Cali - Vigilancia Epidemiologica - INS</fuentes>
+              <elaboro>&elaboro_gvec;</elaboro>
+              <apoyo>&univalle;</apoyo>
+              <fuentes>&sspm_ins;</fuentes>
               <datos>
               
                     <detalle descripcion="Colombia" nivel="pais">

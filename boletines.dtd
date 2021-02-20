@@ -1,3 +1,7 @@
+<!ENTITY elaboro_gvec "Grupo vigilancia epidemiologica cali">
+<!ENTITY univalle "Universidad del Valle">
+<!ENTITY sspm_ins "Salud publica SSPM-Cali - Vigilancia Epidemiologica - INS">
+
 <!ELEMENT boletines (boletin+)>
 <!ELEMENT boletin (fecha_emision, hora_emision, fecha_situacion_inicial, fecha_situacion_final, elaboro,apoyo,fuentes,datos+)>
 <!ELEMENT fecha_emision (#PCDATA)>
